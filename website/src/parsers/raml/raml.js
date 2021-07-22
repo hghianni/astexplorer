@@ -5,11 +5,9 @@ export default {
     ...defaultParserInterface,
 
     id: ID,
-    displayName: ID,
+    displayName: 'amf-parser',
     version: '5.0.0-beta.2',
     homepage: 'https://www.npmjs.com/package/amf-client-js',
-    _ignoredProperties: new Set(['_type']),
-    locationProps: new Set(['Loc']),
 
     loadParser(callback) {
         require(['amf-client-js', 'generic-js-model-adapter'], (parser, adapter) => {
